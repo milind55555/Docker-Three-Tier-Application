@@ -30,7 +30,7 @@ if (process.env.NODE_ENV !== 'test') {
 }
 
 // Root route for quick verification
-app.get('/', (req, res) => {
+app.get(['/', '/api'], (req, res) => {
   res.json({
     name: 'Task Management API',
     version: '1.0.0',
